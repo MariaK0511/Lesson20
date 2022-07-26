@@ -8,7 +8,7 @@ public class Students {
     private String country;
     private String city;
 
-    public Students(){
+    public Students() {
     }
 
     public long getId() {
@@ -44,22 +44,9 @@ public class Students {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Students)) return false;
-        Students students = (Students) o;
-        return getId() == students.getId() && getName().equals(students.getName()) && getCountry().equals(students.getCountry()) && getCity().equals(students.getCity());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getName(), getCountry(), getCity());
-    }
-
-    @Override
     public String toString() {
-        return "homework20.Students{" +
-                "id=" + id +
+        return "Students{" +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 ", city='" + city + '\'' +
